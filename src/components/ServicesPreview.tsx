@@ -60,7 +60,7 @@ const ServicesPreview = () => {
           {services.map((service, index) => (
             <div 
               key={service.id} 
-              className="card-glamongo group border-2 border-glamongo-purple/20 hover:border-glamongo-rose"
+              className="card-glamongo group border-2 border-glamongo-primary/20 hover:border-glamongo-primary"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="aspect-[4/3] bg-glamongo-blush/40 relative overflow-hidden rounded-xl mb-4">

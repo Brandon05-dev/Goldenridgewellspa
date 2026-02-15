@@ -61,9 +61,9 @@
     --glamongo-lavender: #808080; /* Grey */
     --glamongo-sunset: #000000; /* Black */
     
-    /* Vibrant Shadows */
-    --shadow-rose: 0 4px 20px rgba(255, 107, 157, 0.4);
-    --shadow-rose-lg: 0 10px 40px rgba(255, 20, 147, 0.5);
+    /* Golden Shadows */
+    --shadow-rose: 0 4px 20px rgba(212, 175, 55, 0.4);
+    --shadow-rose-lg: 0 10px 40px rgba(212, 175, 55, 0.5);
     --shadow-elegant: 0 8px 32px rgba(26, 26, 46, 0.12);
     --shadow-glow: 0 0 25px rgba(255, 215, 0, 0.6);
     --shadow-purple: 0 4px 20px rgba(157, 78, 221, 0.4);
@@ -127,7 +127,7 @@
   .card-glamongo {
     @apply bg-white rounded-2xl p-6 shadow-elegant;
     @apply transition-all duration-300 ease-in-out;
-    @apply hover:shadow-rose-lg hover:scale-[1.02];
+    @apply hover:shadow-lg hover:shadow-[0_10px_40px_rgba(212,175,55,0.3)] hover:scale-[1.02];
   }
 
   /* Glamongo Section */
