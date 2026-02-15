@@ -9,10 +9,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-glamongo-blush text-glamongo-charcoal hover:bg-glamongo-champagne shadow-rose hover:shadow-rose-lg hover:scale-105 transition-all duration-300",
+        default: "bg-glamongo-blush text-glamongo-charcoal hover:bg-glamongo-accent shadow-rose hover:shadow-rose-lg hover:scale-105 transition-all duration-300",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border-2 border-glamongo-blush bg-transparent text-glamongo-charcoal hover:bg-glamongo-blush hover:shadow-rose transition-all duration-300",
-        secondary: "bg-glamongo-rose text-glamongo-charcoal hover:bg-glamongo-champagne shadow-rose hover:shadow-elegant transition-all duration-300",
+        secondary: "bg-glamongo-rose text-glamongo-charcoal hover:bg-glamongo-accent shadow-rose hover:shadow-elegant transition-all duration-300",
         ghost: "hover:bg-glamongo-blush/20 hover:text-glamongo-rose transition-all duration-300",
         link: "text-glamongo-rose underline-offset-4 hover:underline",
         gold: "bg-glamongo-champagne text-glamongo-charcoal shadow-rose hover:shadow-glow hover:scale-105 transition-all duration-300 font-semibold",

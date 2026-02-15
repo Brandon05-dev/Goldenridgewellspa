@@ -1,86 +1,74 @@
-# 💅 GlamPro - Beauty Booking System
+# 💅 Golden Ridgewell - Beauty Booking System
 
-> **Blush & Gold Elegance** - A full-stack MERN beauty booking application with Firebase Authentication
+> **Golden, Grey & Black Elegance** - A modern React beauty booking application with Firebase Authentication
 
-![Version](https://img.shields.io/badge/version-1.0.0-blush)
-![License](https://img.shields.io/badge/license-MIT-gold)
+![Version](https://img.shields.io/badge/version-1.0.0-gold)
+![License](https://img.shields.io/badge/license-MIT-black)
 
 ## 🌟 Overview
 
-**GlamPro** is a modern, elegant beauty booking system built with the MERN stack (MongoDB, Express, React, Node.js) and Firebase Authentication. The application features a public booking interface and a secure, hidden admin dashboard for managing appointments.
+**Golden Ridgewell** is a modern, elegant beauty booking system built with React, TypeScript, and Tailwind CSS. The application features a public booking interface and a secure, hidden admin dashboard for managing appointments, deployed on Vercel.
 
 ### ✨ Key Features
 
-- 🎨 **Glamongo Theme** - Blush & Gold Elegance design palette
+- 🎨 **Golden Theme** - Golden, Grey & Black Elegance design palette
 - 📱 **Responsive Design** - Mobile-first approach with Tailwind CSS
 - 🔒 **Secure Admin Panel** - Hidden routes with Firebase Authentication
-- 📧 **Automated Reminders** - Email notifications 12 hours before appointments
 - ⚡ **Real-time Updates** - Dynamic booking management
-- 🎭 **Smooth Animations** - Framer Motion powered transitions
+- 🎭 **Smooth Animations** - CSS-powered transitions
+- 🚀 **Vercel Deployed** - Optimized for modern web hosting
 
 ## 📁 Project Structure
 
 ```
-beauty-delivered-app/
-├── backend/                 # Node.js + Express API
-│   ├── config/             # Database & Firebase config
-│   ├── models/             # MongoDB schemas
-│   ├── routes/             # API endpoints
-│   ├── services/           # Email & cron services
-│   └── server.js           # Main server file
-│
-├── frontend/               # React + TypeScript UI
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── pages/         # Page components
-│   │   ├── config/        # Firebase client config
-│   │   ├── context/       # React contexts
-│   │   └── services/      # API services
-│   ├── public/
-│   │   └── images/        # Image assets
-│   └── [config files]     # Vite, Tailwind, etc.
-│
-└── [documentation]/        # Setup guides & docs
+goldenridgewellspa/
+├── src/                    # React + TypeScript UI
+│   ├── components/        # React components
+│   ├── pages/             # Page components
+│   ├── config/            # Firebase client config
+│   ├── context/           # React contexts
+│   ├── services/          # API services
+│   └── lib/               # Utilities
+├── public/                # Static assets
+│   └── images/            # Image assets
+├── [config files]         # Vite, Tailwind, TypeScript
+└── [documentation]/       # Setup guides & docs
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js 18+ 
-- MongoDB (local or Atlas)
+- Node.js 18+
+- npm or yarn
 - Firebase account
-- Gmail account (for email service)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Brandon05-dev/beauty-delivered-app.git
-   cd beauty-delivered-app
+   git clone https://github.com/Brandon05-dev/Goldenridgewellspa.git
+   cd Goldenridgewellspa
    ```
 
-2. **Setup Backend**
+2. **Install dependencies**
    ```bash
-   cd backend
    npm install
+   ```
+
+3. **Setup environment variables**
+   ```bash
    cp .env.example .env
-   # Edit .env with your credentials
-   npm run dev
+   # Edit .env with your Firebase configuration
    ```
 
-3. **Setup Frontend**
+4. **Start development server**
    ```bash
-   cd frontend
-   npm install
-   cp ../.env.example .env
-   # Edit .env with Firebase config
    npm run dev
    ```
 
-4. **Access the Application**
+5. **Access the Application**
    - Frontend: http://localhost:8080
-   - Backend API: http://localhost:5000
    - Admin Login: http://localhost:8080/admin-login-glampro
 
 ## 📚 Documentation
@@ -88,19 +76,18 @@ beauty-delivered-app/
 - **[README_GLAMPRO.md](./README_GLAMPRO.md)** - Complete setup guide
 - **[SETUP_CHECKLIST.md](./SETUP_CHECKLIST.md)** - Step-by-step checklist
 - **[GLAMONGO_THEME.md](./GLAMONGO_THEME.md)** - Theme documentation
-- **[Images README](./frontend/public/images/README.md)** - Image assets guide
+- **[Images README](./public/images/README.md)** - Image assets guide
 
 ## 🎨 Theme
 
-**Glamongo - Blush & Gold Elegance**
+**Golden Ridgewell - Golden, Grey & Black Elegance**
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Blush Pink | `#FADADD` | Primary accent |
-| Rose Gold | `#E6B2A6` | Secondary accent |
-| Charcoal | `#2B2B2B` | Text & contrast |
-| Ivory | `#FFF9F7` | Background |
-| Champagne | `#F6E2B3` | Highlights |
+| Golden | `#D4AF37` | Primary accent |
+| Grey | `#808080` | Secondary accent |
+| Black | `#000000` | Text & contrast |
+| White | `#FFFFFF` | Background |
 
 **Fonts:**
 - Headings: Playfair Display
@@ -122,18 +109,13 @@ The admin dashboard is intentionally hidden and not linked in the navigation:
 - TypeScript
 - Vite
 - Tailwind CSS
-- Framer Motion
 - Firebase SDK
 - Axios
 - Shadcn/ui
 
-### Backend
-- Node.js
-- Express
-- MongoDB + Mongoose
-- Firebase Admin SDK
-- Nodemailer
-- Node-cron
+### Deployment
+- Vercel
+- Firebase Hosting (optional)
 
 ## 📦 Features
 
@@ -151,17 +133,15 @@ The admin dashboard is intentionally hidden and not linked in the navigation:
 - ✅ View statistics
 - ✅ Automatic reminders
 
-## 🧪 Testing
+## 🧪 Development
 
-Run the development servers:
+Start the development server:
 
 ```bash
-# Terminal 1 - Backend
-cd backend && npm run dev
-
-# Terminal 2 - Frontend  
-cd frontend && npm run dev
+npm run dev
 ```
+
+Access at: http://localhost:8080
 
 ## 📝 License
 

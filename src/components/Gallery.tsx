@@ -19,7 +19,7 @@ const Gallery = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-6 animate-fade-in">
           <h2 className="subheading-glamongo">
-            Our <span className="text-glamongo-purple">Transformations</span>
+            Our <span className="text-glamongo-primary">Transformations</span>
           </h2>
           <div className="flex justify-center">
             <div className="accent-line" />
@@ -34,7 +34,7 @@ const Gallery = () => {
           {galleryImages.map((src, index) => (
             <div
               key={index}
-              className="aspect-square rounded-2xl bg-glamongo-blush/40 hover:scale-105 hover:shadow-rose-lg transition-all duration-300 cursor-pointer overflow-hidden animate-fade-in border-2 border-glamongo-purple/20"
+              className="aspect-square rounded-2xl bg-glamongo-primary/40 hover:scale-105 hover:shadow-glow transition-all duration-300 cursor-pointer overflow-hidden animate-fade-in border-2 border-glamongo-primary/20"
               style={{ animationDelay: `${index * 80}ms` }}
             >
               <img src={src} alt={`Gallery image ${index + 1}`} className="w-full h-full object-cover" />

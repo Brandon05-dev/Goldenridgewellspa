@@ -119,7 +119,7 @@ const Services = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-playfair font-bold text-white">
-              Our <span className="text-glamongo-rose">Services</span>
+              Our <span className="text-glamongo-primary">Services</span>
             </h1>
             <div className="flex justify-center">
               <div className="accent-line bg-white" />
@@ -138,7 +138,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div 
                 key={service.id}
-                className="overflow-hidden rounded-2xl shadow-elegant hover:shadow-rose-lg transition-all duration-300 bg-white border-2 border-glamongo-blush/30 animate-fade-in flex flex-col"
+                className="overflow-hidden rounded-2xl shadow-elegant hover:shadow-glow transition-all duration-300 bg-white border-2 border-glamongo-primary/30 animate-fade-in flex flex-col"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Image */}
@@ -154,7 +154,7 @@ const Services = () => {
                 <div className="p-6 flex flex-col flex-grow">
                   <div>
                     <h3 className="text-2xl font-playfair font-bold text-glamongo-charcoal mb-2">{service.name}</h3>
-                    <p className="text-glamongo-rose font-poppins font-medium text-sm">{service.tagline}</p>
+                    <p className="text-glamongo-primary font-poppins font-medium text-sm">{service.tagline}</p>
                   </div>
 
                   <p className="text-glamongo-charcoal/70 leading-relaxed font-poppins my-4 text-sm flex-grow">
@@ -162,9 +162,9 @@ const Services = () => {
                   </p>
 
                   {/* Details */}
-                  <div className="flex gap-4 py-3 border-y border-glamongo-blush/40 text-sm">
+                  <div className="flex gap-4 py-3 border-y border-glamongo-primary/40 text-sm">
                     <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-glamongo-rose" />
+                      <Clock className="w-4 h-4 text-glamongo-primary" />
                       <div>
                         <p className="font-semibold text-glamongo-charcoal font-poppins">{service.duration}</p>
                       </div>
@@ -177,7 +177,7 @@ const Services = () => {
                     <ul className="space-y-1.5">
                       {service.includes.slice(0, 3).map((item, i) => (
                         <li key={i} className="flex items-start gap-2 text-xs text-glamongo-charcoal/70 font-poppins">
-                          <Check className="w-3.5 h-3.5 text-glamongo-rose mt-0.5 flex-shrink-0" />
+                          <Check className="w-3.5 h-3.5 text-glamongo-primary mt-0.5 flex-shrink-0" />
                           <span>{item}</span>
                         </li>
                       ))}

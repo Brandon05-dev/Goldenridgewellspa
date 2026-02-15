@@ -22,19 +22,19 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
-        // Vibrant Beauty Palette - Sharp & Modern
+        // Golden Ridgewell Beauty Palette - Golden, Grey, White, Black
         glamongo: {
-          blush: '#FF6B9D',      // Primary - vibrant hot pink
-          rose: '#FF1493',        // Accent - deep pink/magenta
-          charcoal: '#1A1A2E',    // Contrast - deep navy charcoal
-          ivory: '#FFFFFF',       // Pure white base
-          champagne: '#FFD700',   // Bright gold
-          purple: '#9D4EDD',      // Rich purple accent
-          coral: '#FF6F61',       // Coral accent
-          mint: '#00D9C0',        // Fresh mint/teal
-          lavender: '#C77DFF',    // Soft lavender
-          sunset: '#FF5E78',      // Sunset pink
-          whatsapp: '#25D366',    // WhatsApp green
+          primary: '#D4AF37',      // Golden
+          secondary: '#808080',    // Grey
+          background: '#FFFFFF',   // White
+          dark: '#000000',         // Black
+          white: '#FFFFFF',        // Pure white
+          muted: '#A9A9A9',        // Light grey for muted text
+          footer: '#CCCCCC',       // Footer text
+          accent: '#FFD700',       // Bright golden hover
+          blueHover: '#2699f2',    // Keep for any blue elements
+          coral: '#F9A392',        // Keep for accents
+          whatsapp: '#25D366',     // WhatsApp green
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
