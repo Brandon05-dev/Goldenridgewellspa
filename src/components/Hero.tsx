@@ -12,12 +12,12 @@ const Hero = () => {
           {/* Left Side: Text Content */}
           <div className="text-center md:text-left space-y-6 animate-fade-in">
             <h1 className="heading-glamongo text-white">
-              <span className="text-glamongo-blush">
-                Experience
+              <span className="text-glamongo-primary">
+                Golden
               </span>
               <br />
-              <span className="text-glamongo-purple">
-                Glamongo
+              <span className="text-black">
+                Ridgewell
               </span>
             </h1>
             <div className="flex justify-center md:justify-start">
@@ -26,8 +26,8 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto md:mx-0 leading-relaxed font-poppins italic font-bold">
               Elevate your beauty routine with our sophisticated booking platform.
               <br />
-              <span className="font-semibold text-glamongo-lavender">Professional services</span>, 
-              <span className="font-semibold text-glamongo-blush"> elegant experience</span>, 
+              <span className="font-semibold text-black">Professional services</span>, 
+              <span className="font-semibold text-glamongo-primary"> elegant experience</span>, 
               effortless appointments.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
@@ -37,7 +37,7 @@ const Hero = () => {
                 </button>
               </Link>
               <Link to="/services">
-                <button className="btn-glamongo-outline text-white border-white hover:bg-white hover:text-glamongo-rose">
+                <button className="btn-glamongo-outline text-white border-white hover:bg-white hover:text-glamongo-accent">
                   View Services
                 </button>
               </Link>

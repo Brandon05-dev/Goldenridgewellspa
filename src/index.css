@@ -2,65 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Vibrant Beauty Theme - Sharp & Modern Colors
-   Primary (vibrant hot pink): #FF6B9D
-   Accent (deep pink): #FF1493
-   Contrast (deep navy charcoal): #1A1A2E
-   Base (pure white): #FFFFFF
-   Gold Highlight: #FFD700
-   Purple Accent: #9D4EDD
-   Coral: #FF6F61
-   Mint/Teal: #00D9C0
+/* Golden Ridgewell Beauty Theme - Golden, Grey, White, Black
+   Primary (golden): #D4AF37
+   Secondary (grey): #808080
+   Background (white): #FFFFFF
+   Dark (black): #000000
+   White: #FFFFFF
+   Muted: #A9A9A9
+   Accent: #FFD700
 */
 
 @layer base {
   :root {
-    /* Vibrant Color System - HSL Format */
-    --background: 0 0% 100%;        /* #FFFFFF - Pure White */
-    --foreground: 235 26% 14%;      /* #1A1A2E - Deep Navy Charcoal */
+    /* Golden, Grey, White, Black Color System - HSL Format */
+    --background: 0 0% 100%;         /* #FFFFFF - White */
+    --foreground: 0 0% 0%;           /* #000000 - Black */
 
     --card: 0 0% 100%;
-    --card-foreground: 235 26% 14%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 235 26% 14%;
+    --popover-foreground: 0 0% 0%;
 
-    /* Vibrant Hot Pink Primary */
-    --primary: 340 100% 71%;        /* #FF6B9D - Hot Pink */
+    /* Golden Primary */
+    --primary: 45 65% 53%;           /* #D4AF37 - Golden */
     --primary-foreground: 0 0% 100%;
 
-    /* Deep Pink Accent */
-    --secondary: 328 100% 54%;      /* #FF1493 - Deep Pink */
+    /* Grey Secondary */
+    --secondary: 0 0% 50%;           /* #808080 - Grey */
     --secondary-foreground: 0 0% 100%;
 
-    /* Soft Backgrounds */
-    --muted: 0 0% 98%;
-    --muted-foreground: 235 10% 45%;
+    /* Light Grey Backgrounds */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 0%;           /* Black text */
 
-    /* Purple Highlights */
-    --accent: 277 75% 59%;          /* #9D4EDD - Rich Purple */
-    --accent-foreground: 0 0% 100%;
+    /* Bright Golden Accent */
+    --accent: 50 100% 60%;           /* #FFD700 - Bright Golden */
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 340 100% 90%;         /* Soft pink border */
-    --input: 340 50% 95%;
-    --ring: 277 75% 59%;            /* Purple ring */
+    --border: 0 0% 90%;              /* Light grey border */
+    --input: 0 0% 95%;
+    --ring: 45 65% 53%;              /* Golden ring */
 
     --radius: 0.75rem;
     
-    /* Custom Vibrant Variables */
-    --glamongo-blush: #FF6B9D;
-    --glamongo-rose: #FF1493;
-    --glamongo-charcoal: #1A1A2E;
-    --glamongo-ivory: #FFFFFF;
-    --glamongo-champagne: #FFD700;
-    --glamongo-purple: #9D4EDD;
-    --glamongo-coral: #FF6F61;
-    --glamongo-mint: #00D9C0;
-    --glamongo-lavender: #C77DFF;
-    --glamongo-sunset: #FF5E78;
+    /* Custom Golden, Grey, Black Variables */
+    --glamongo-blush: #D4AF37;  /* Golden */
+    --glamongo-rose: #FFD700;   /* Bright Golden */
+    --glamongo-charcoal: #000000; /* Black */
+    --glamongo-ivory: #FFFFFF; /* White */
+    --glamongo-champagne: #808080; /* Grey */
+    --glamongo-purple: #A9A9A9; /* Light Grey */
+    --glamongo-coral: #D4AF37; /* Golden */
+    --glamongo-mint: #FFFFFF; /* White */
+    --glamongo-lavender: #808080; /* Grey */
+    --glamongo-sunset: #000000; /* Black */
     
     /* Vibrant Shadows */
     --shadow-rose: 0 4px 20px rgba(255, 107, 157, 0.4);
@@ -105,23 +104,23 @@
 @layer components {
   /* Glamongo Button Styles */
   .btn-glamongo {
-    @apply bg-glamongo-blush text-white font-semibold px-8 py-3 rounded-lg;
+    @apply bg-glamongo-primary text-white font-semibold px-8 py-3 rounded-lg;
     @apply transition-all duration-300 ease-in-out;
-    @apply shadow-rose hover:shadow-rose-lg;
-    @apply hover:bg-glamongo-rose hover:scale-105;
+    @apply shadow-lg hover:shadow-xl;
+    @apply hover:bg-glamongo-accent hover:scale-105;
   }
 
   .btn-glamongo-secondary {
-    @apply bg-glamongo-purple text-white font-semibold px-8 py-3 rounded-lg;
+    @apply bg-glamongo-secondary text-white font-semibold px-8 py-3 rounded-lg;
     @apply transition-all duration-300 ease-in-out;
-    @apply shadow-purple hover:shadow-elegant;
-    @apply hover:bg-glamongo-lavender;
+    @apply shadow-lg hover:shadow-xl;
+    @apply hover:bg-glamongo-muted;
   }
 
   .btn-glamongo-outline {
-    @apply border-2 border-glamongo-blush text-glamongo-rose font-semibold px-8 py-3 rounded-lg;
+    @apply border-2 border-glamongo-primary text-glamongo-primary font-semibold px-8 py-3 rounded-lg;
     @apply transition-all duration-300 ease-in-out;
-    @apply hover:bg-glamongo-blush hover:text-white hover:shadow-rose;
+    @apply hover:bg-glamongo-primary hover:text-white hover:shadow-lg;
   }
 
   /* Glamongo Card Styles */
@@ -138,23 +137,23 @@
 
   /* Glamongo Heading */
   .heading-glamongo {
-    @apply font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-glamongo-charcoal mb-4;
+    @apply font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-glamongo-dark mb-4;
     @apply animate-fade-in;
     text-shadow: 2px 2px 4px rgba(26, 26, 46, 0.1);
   }
 
   .subheading-glamongo {
-    @apply font-playfair text-2xl md:text-3xl lg:text-4xl font-semibold text-glamongo-charcoal mb-3;
+    @apply font-playfair text-2xl md:text-3xl lg:text-4xl font-semibold text-glamongo-dark mb-3;
   }
 
   /* Glamongo Text */
   .text-glamongo {
-    @apply font-poppins text-base md:text-lg text-glamongo-charcoal/80;
+    @apply font-poppins text-base md:text-lg text-glamongo-dark/80;
   }
 
   /* Glamongo Accent Line */
   .accent-line {
-    @apply w-24 h-1 bg-glamongo-purple rounded-full;
-    box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+    @apply w-24 h-1 bg-glamongo-primary rounded-full;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
   }
 }
