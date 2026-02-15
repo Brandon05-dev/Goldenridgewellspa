@@ -46,10 +46,10 @@ const Hero = () => {
 
           {/* Right Side: Image Frames */}
           <div className="hidden md:flex justify-center items-center relative h-96">
-            <div className="absolute top-0 right-10 w-64 h-80 rounded-2xl overflow-hidden shadow-rose-lg transform rotate-6 transition-transform duration-500 hover:scale-105">
+            <div className="absolute top-0 right-10 w-64 h-80 rounded-2xl overflow-hidden shadow-glow transform rotate-6 transition-transform duration-500 hover:scale-105">
               <img src="/images/hero/hero-2.png" alt="Beauty Service 1" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-0 right-32 w-56 h-72 rounded-2xl overflow-hidden shadow-purple transform -rotate-8 transition-transform duration-500 hover:scale-105">
+            <div className="absolute bottom-0 right-32 w-56 h-72 rounded-2xl overflow-hidden shadow-glow transform -rotate-8 transition-transform duration-500 hover:scale-105">
               <img src="/images/hero/hero-3.png" alt="Beauty Service 2" className="w-full h-full object-cover" />
             </div>
           </div>
